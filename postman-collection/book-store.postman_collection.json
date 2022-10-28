@@ -153,7 +153,7 @@
 	"variable": [
 		{
 			"key": "host",
-			"value": "book-store-quarkus-xtecuan-dev.apps.sandbox.x8i5.p1.openshiftapps.com"
+			"value": "bookstore.apps.sandbox.x8i5.p1.openshiftapps.com"
 		}
 	]
 }
