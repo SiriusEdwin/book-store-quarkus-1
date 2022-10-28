@@ -5,7 +5,7 @@ S2I_SOURCE_DEPLOYMENTS_FILTER=app lib quarkus quarkus-run.jar
 JAVA_OPTS=-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager
 AB_JOLOKIA_OFF=true
 JAVA_APP_JAR=/deployments/quarkus-run.jar
-POSTGRESQL_USER=xtecuan
-POSTGRESQL_PASSWORD=X4tecuan
-POSTGRESQL_SERVICE_HOST=172.30.246.11
-POSTGRESQL_DATABASE=restapiDB
+#POSTGRESQL_USER=xtecuan
+#POSTGRESQL_PASSWORD=X4tecuan
+#POSTGRESQL_SERVICE_HOST=172.30.246.11
+#POSTGRESQL_DATABASE=restapiDB
