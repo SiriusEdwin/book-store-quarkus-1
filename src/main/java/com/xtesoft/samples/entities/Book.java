@@ -4,9 +4,9 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "books")
+@Table(name = "soccerplayers")
 @NamedQueries({
-        @NamedQuery(name = "Book.findAll", query = "SELECT b FROM Book b")
+        @NamedQuery(name = "Player.findAll", query = "SELECT b FROM Book b")
 })
 public class Book implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -14,14 +14,12 @@ public class Book implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String title;
-    private String description;
-    private String isbn;
-    private String publisher;
-    private String language;
-    private String author;
-    private float price;
-    private int pages;
+    private String name;
+
+    private float height;
+    private String birthdate;
+    private String birthplace;
+    private String team;
 
     public Long getId() {
         return id;
@@ -31,67 +29,44 @@ public class Book implements Serializable {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public float getHeight() {
+        return height;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setHeight(float height) {
+        this.height = height;
     }
 
-    public String getIsbn() {
-        return isbn;
+    public String getBirthdate() {
+        return birthdate;
     }
 
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
     }
 
-    public String getPublisher() {
-        return publisher;
+    public String getBirthplace() {
+        return birthplace;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
+    public void setBirthplace(String birthplace) {
+        this.birthplace = birthplace;
     }
 
-    public String getLanguage() {
-        return language;
+    public String getTeam() {
+        return team;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setTeam(String team) {
+        this.team = team;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public int getPages() {
-        return pages;
-    }
-
-    public void setPages(int pages) {
-        this.pages = pages;
-    }
 }
